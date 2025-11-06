@@ -1,6 +1,6 @@
 command: "echo Hello from Helm && sleep 1 && echo done"
 image:
-repository: alpine
-tag: 3.18
-pullPolicy: IfNotPresent
+  repository: alpine
+  tag: 3.18
+  pullPolicy: IfNotPresent
 podName: run-command-pod

@@ -6,7 +6,6 @@ metadata:
   labels:
     app: run-command
 spec:
-  restartPolicy: Never
   containers:
     - name: runner
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

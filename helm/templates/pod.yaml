@@ -10,8 +10,8 @@ spec:
     - name: runner
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
       imagePullPolicy: {{ .Values.image.pullPolicy }}
-      command: ["/bin/sh", "-c"]
-      args: ["$COMMAND"]
-      env:
-        - name: COMMAND
-          value: "{{ .Values.command }}"
+      command: ["/bin/sh", "-c", "{{ .Values.command }}"]
+    #   args: ["$COMMAND"]
+    #   env:
+    #     - name: COMMAND
+    #       value: "{{ .Values.command }}"

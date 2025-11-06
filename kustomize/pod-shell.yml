@@ -11,8 +11,8 @@ spec:
     - name: runner
       image: nginx
       imagePullPolicy: IfNotPresent
-      command: ["/bin/sh", "-c"]
-      args: ["$COMMAND"]
-      env:
-        - name: COMMAND
-          value: "echo Hello from Pod && sleep 1 && echo done"
+      # command: ["/bin/sh", "-c"]
+      # args: ["$COMMAND"]
+      # env:
+      #   - name: COMMAND
+      #     value: "echo Hello from Pod && sleep 1 && echo done"

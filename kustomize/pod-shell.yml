@@ -9,7 +9,7 @@ spec:
   restartPolicy: Never
   containers:
     - name: runner
-      image: alpine:3.18
+      image: nginx
       imagePullPolicy: IfNotPresent
       command: ["/bin/sh", "-c"]
       args: ["$COMMAND"]

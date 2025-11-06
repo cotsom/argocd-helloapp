@@ -6,12 +6,9 @@ metadata:
   labels:
     app: run-command
 spec:
+  restartPolicy: Never
   containers:
     - name: runner
       image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
       imagePullPolicy: {{ .Values.image.pullPolicy }}
       command: ["/bin/sh", "-c", "{{ .Values.command }}"]
-    #   args: ["$COMMAND"]
-    #   env:
-    #     - name: COMMAND
-    #       value: "{{ .Values.command }}"

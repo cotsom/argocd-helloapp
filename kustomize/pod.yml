@@ -9,10 +9,6 @@ spec:
   restartPolicy: Never
   containers:
     - name: runner
-      image: nginx
+      image: alpine:3.18
       imagePullPolicy: IfNotPresent
-      # command: ["/bin/sh", "-c"]
-      # args: ["$COMMAND"]
-      # env:
-      #   - name: COMMAND
-      #     value: "echo Hello from Pod && sleep 1 && echo done"
+      command: ["/bin/sh", "-c", "echo Hello from Pod && sleep 20 && echo done"]

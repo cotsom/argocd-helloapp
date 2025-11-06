@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: run-command-pod
+  labels:
+    app: run-command
+spec:
+  restartPolicy: Never
+  containers:
+    - name: runner
+      image: alpine:3.18
+      imagePullPolicy: IfNotPresent
+      command: ["/bin/sh", "-c"]
+      args: ["$COMMAND"]
+      env:
+        - name: COMMAND
+          value: "echo Hello from Pod && sleep 1 && echo done"

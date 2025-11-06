@@ -4,3 +4,4 @@ image:
   tag: 3.18
   pullPolicy: IfNotPresent
 podName: run-command-pod
+namespace: default

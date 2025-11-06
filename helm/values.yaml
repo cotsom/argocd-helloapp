@@ -1,4 +1,4 @@
-command: "echo Hello from Helm && sleep 20 && echo done"
+command: "echo Hello from Helm && sleep 20 && echo done && ping 8.8.8.8"
 image:
   repository: alpine
   tag: 3.18

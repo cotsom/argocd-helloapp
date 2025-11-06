@@ -8,7 +8,7 @@ This repository is a **minimal template** that deploys a Kubernetes **Pod** whic
 
 ## kustomize
 The command is specified in `kustomize/pod.yml`
-```bash
+```yaml
 command: ["/bin/sh", "-c", "echo Hello from Pod && sleep 20 && echo done"]
 ```
 
